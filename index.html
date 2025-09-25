@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê da Flavia - Roupas, Bolsas e Acessórios</title>
+    <meta name="description" content="Ateliê da Flavia - Peças únicas em crochê artesanal. Roupas, bolsas e acessórios feitos com amor e dedicação. Qualidade e sofisticação em cada detalhe.">
+    <meta name="keywords" content="crochê, artesanal, roupas, bolsas, acessórios, handmade, ateliê">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Ateliê da Flavia</h1>
+                    <span>Feito com Amor</span>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Início</a></li>
+                        <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="cart-btn" id="cartBtn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Peças Únicas em Crochê</h2>
+                <p>Descubra a beleza do artesanal com roupas, bolsas e acessórios feitos com amor e dedicação</p>
+                <a href="#produtos" class="cta-btn">Ver Coleção</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=800&fit=crop&crop=center" alt="Peças de crochê artesanal" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Produtos em Destaque</h2>
+            <div class="products-grid" id="featuredProducts">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Nossas Categorias</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="roupas">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=300&fit=crop&crop=center" alt="Roupas de Crochê" loading="lazy">
+                    <h3>Roupas de Crochê</h3>
+                    <p>Blusas, vestidos e cardigãs únicos</p>
+                </div>
+                <div class="category-card" data-category="bolsas">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop&crop=center" alt="Bolsas Artesanais" loading="lazy">
+                    <h3>Bolsas</h3>
+                    <p>Bolsas e carteiras artesanais</p>
+                </div>
+                <div class="category-card" data-category="acessorios">
+                    <img src="https://images.unsplash.com/photo-1506629905607-d405d7d3b0d2?w=400&h=300&fit=crop&crop=center" alt="Acessórios de Crochê" loading="lazy">
+                    <h3>Acessórios</h3>
+                    <p>Chapéus, lenços e muito mais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="products-section">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-title">Todos os Produtos</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="roupas">Roupas</button>
+                    <button class="filter-btn" data-filter="bolsas">Bolsas</button>
+                    <button class="filter-btn" data-filter="acessorios">Acessórios</button>
+                </div>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre o Ateliê da Flavia</h2>
+                    <p>Há mais de 10 anos, o Ateliê da Flavia se dedica à arte do crochê, criando peças únicas que combinam tradição e modernidade. Cada produto é cuidadosamente confeccionado à mão, com atenção aos mínimos detalhes.</p>
+                    <p>Nossa missão é valorizar o trabalho artesanal brasileiro, oferecendo peças de qualidade que contam uma história e carregam o carinho de quem as fez.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Feito com amor</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Materiais sustentáveis</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Qualidade premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=600&fit=crop&crop=center" alt="Processo artesanal de crochê" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Fale Conosco</h3>
+                    <p>Tem alguma dúvida ou quer fazer um pedido personalizado? Entre em contato!</p>
+                    <div class="contact-methods">
+                        <a href="https://wa.me/5511999999999" class="contact-method" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://instagram.com/ateliedaflavia" class="contact-method" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="mailto:contato@ateliedaflavia.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>E-mail</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ateliê da Flavia</h3>
+                    <p>Crochê artesanal com qualidade e carinho</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/ateliedaflavia" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:contato@ateliedaflavia.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#produtos">Roupas de Crochê</a></li>
+                        <li><a href="#produtos">Bolsas</a></li>
+                        <li><a href="#produtos">Acessórios</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ateliê da Flavia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Carrinho de Compras</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="product-modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="product-modal-body" id="productModalBody">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
